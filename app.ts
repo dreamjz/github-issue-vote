@@ -32,6 +32,7 @@ app.get('/vote', async (req: Request, res: Response) => {
     
     console.log("vote info: ", vote);
 
+    res.setHeader("Content-Type","image/svg+xml");
     res.send(vote.generateSvg());
   } catch (error) {
     console.error(error);
