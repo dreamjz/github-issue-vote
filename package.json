@@ -12,7 +12,8 @@
   "scripts": {
     "start": "ts-node app.ts",
     "dev": "nodemon --exec ts-node app.ts",
-    "lint": "eslint . --ext .ts"
+    "lint": "eslint . --ext .ts",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
