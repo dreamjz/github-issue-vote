@@ -28,7 +28,7 @@ app.get('/vote', async (req: Request, res: Response) => {
     console.log('sending request to ' + issuePath);
 
     const reaction = await fetchIssueReactions(issuePath);
-    const vote = new Vote(reaction.heart+3, reaction.rocket+2);
+    const vote = new Vote(reaction.heart, reaction.rocket);
     
     console.log("vote info: ", vote);
 
@@ -60,7 +60,10 @@ async function fetchIssueReactions(issuePath: string): Promise<IssueReaction> {
     accept: 'application/vnd.github+json',
   };
 
-  const octokit = new Octokit();
+  const octokit = new Octokit({
+    auth: process.env.GITHUB_ISSUE_VOTE_API
+  });
+
   const response = await octokit.request(`GET ${path}`, {
     headers: headers,
   });

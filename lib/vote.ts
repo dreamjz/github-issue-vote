@@ -15,6 +15,9 @@ export default class Vote {
     const heartRatio = heart/sum;
     const rocketRatio = rocket/sum;
 
+    const displayHeartRatio = Number(heartRatio.toFixed(2))*100;
+    const displayRocketRatio = Number(rocketRatio.toFixed(2))*100;
+
     const barLen = 250;
     const heartLen = barLen * heartRatio;
     
@@ -120,7 +123,7 @@ export default class Vote {
                         <g class="stagger" style="animation-delay: 450ms">
                             <circle cx="5" cy="6" r="5" fill="${heartColor}" />
                             <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-                            ${heartName} ${heartRatio*100}%
+                            ${heartName} ${displayHeartRatio}%
                             </text>
                         </g>
                     </g>
@@ -130,7 +133,7 @@ export default class Vote {
                         <g class="stagger" style="animation-delay: 450ms">
                             <circle cx="5" cy="6" r="5" fill="${heartColor}" />
                             <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-                            ${heartNameEN} ${heartRatio*100}%
+                            ${heartNameEN} ${displayHeartRatio}%
                             </text>
                         </g>
                     </g>
@@ -141,7 +144,7 @@ export default class Vote {
                         <g class="stagger" style="animation-delay: 450ms">
                             <circle cx="5" cy="6" r="5" fill="${rocketColor}" />
                             <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-                            ${rocketName} ${rocketRatio*100}%
+                            ${rocketName} ${displayRocketRatio}%
                             </text>
                         </g>
                     </g>
@@ -151,7 +154,7 @@ export default class Vote {
                         <g class="stagger" style="animation-delay: 450ms">
                             <circle cx="5" cy="6" r="5" fill="${rocketColor}" />
                             <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-                            ${rocketNameEN} ${rocketRatio*100}%
+                            ${rocketNameEN} ${displayRocketRatio}%
                             </text>
                         </g>
                     </g>
