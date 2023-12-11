@@ -15,8 +15,12 @@ export default class Vote {
     const heartRatio = heart/sum;
     const rocketRatio = rocket/sum;
 
-    const displayHeartRatio = Number(heartRatio.toFixed(2))*100;
-    const displayRocketRatio = Number(rocketRatio.toFixed(2))*100;
+    console.log("Ratio: ",heartRatio, rocketRatio);
+
+    const displayHeartRatio = (heartRatio*100).toFixed(2);
+    const displayRocketRatio = (rocketRatio*100).toFixed(2);
+
+    console.log("Display Ratio: ",displayHeartRatio, displayRocketRatio);
 
     const barLen = 250;
     const heartLen = barLen * heartRatio;
