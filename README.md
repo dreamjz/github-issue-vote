@@ -8,7 +8,9 @@ If you like this repo, please consider giving it a star (o゜▽゜)o☆ . Thank
 
 ## Example
 
-Here is an example in [github.com/acgtools/hanime-hunter](https://github.com/acgtools/hanime-hunter), check [here](https://github.com/acgtools/hanime-hunter/issues/3) and chooes a reaction:  Pure Love Knight ❤️, NTR Warrior：🚀
+Here is an example in [github.com/acgtools/hanime-hunter](https://github.com/acgtools/hanime-hunter)
+
+Check [here](https://github.com/acgtools/hanime-hunter/issues/3) and chooes a reaction:  Pure Love Knight ❤️, NTR Warrior：🚀
 
 <img src="https://raw.githubusercontent.com/dreamjz/pics/main/pics/2023/202312102326405.jpg" height=180> <img src="https://github-issue-vote.vercel.app/vote?issue=https://github.com/acgtools/hanime-hunter/issues/3" height=190> <img src="https://raw.githubusercontent.com/dreamjz/pics/main/pics/2023/202312102326670.jpg" height=180>
 
