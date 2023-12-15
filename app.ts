@@ -28,7 +28,7 @@ app.get('/vote', async (req: Request, res: Response) => {
     console.log('sending request to ' + issuePath);
 
     const reaction = await fetchIssueReactions(issuePath);
-    const vote = new Vote(reaction.heart, reaction.rocket);
+    const vote = new Vote(reaction.heart, reaction.rocket, reaction.hooray);
     
     console.log("vote info: ", vote);
 
