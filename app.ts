@@ -11,7 +11,7 @@ const server = app.listen(process.env.PORT || port, () => {
 });
 
 app.get('/', (req, res) => {
-  res.send('纯爱天下第一');
+  res.send('纯爱天下第一, Repo: https://github.com/dreamjz/github-issue-vote');
 });
 
 app.get('/vote', async (req: Request, res: Response) => {
